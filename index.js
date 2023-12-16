@@ -14,8 +14,6 @@ const communicationData = [
   { sender: "Family Member", message: "Dont forget to take your medication." },
 ];
 
-//
-
 // Function to update the UI with communication data
 function updateCommunicationUI() {
   const communicationDiv = document.getElementById("communication");
@@ -35,7 +33,6 @@ document
 
 // Initial UI update
 updateCommunicationUI();
-// ... (previous code) ...
 
 // Update health data periodically (simulated)
 setInterval(() => {
@@ -56,9 +53,8 @@ setInterval(() => {
     `;
   }
 
-  // Update the dashboard
   updateDashboard();
-}, 5000); // Update every 5 seconds
+}, 5000);
 
 // Buttons Handler
 
@@ -91,7 +87,6 @@ document
 
 // Medication button click handler
 document.getElementById("medicationButton").addEventListener("click", () => {
-  // Add logic for displaying medication reminders here
   alert("Time for your medication!");
 });
 
@@ -99,7 +94,6 @@ document.getElementById("medicationButton").addEventListener("click", () => {
 const healthHistory = [
   { date: "2023-12-01", heartRate: 78, steps: 3000, temperature: 98.5 },
   { date: "2023-12-02", heartRate: 82, steps: 2500, temperature: 98.8 },
-  // Add more data as needed
 ];
 
 // Display detailed health history
@@ -124,36 +118,6 @@ function updateHealthHistory() {
 }
 updateHealthHistory();
 
-// Initialize FullCalendar
-// document.addEventListener("DOMContentLoaded", function () {
-//   var calendarEl = document.getElementById("calendar");
-
-//   var calendar = new FullCalender.Calendar(calendarEl, {
-//     initialView: "dayGridMonth",
-//     events: [
-//       // Sample events (replace with actual data)
-//       {
-//         title: "Doctor Appointment",
-//         start: "2023-12-15T10:00:00",
-//         end: "2023-12-15T11:00:00",
-//       },
-//       {
-//         title: "Medication Reminder",
-//         start: "2023-12-20T14:00:00",
-//         end: "2023-12-20T15:00:00",
-//       },
-//     ],
-//   });
-
-//   calendar.render();
-// });
-// document.addEventListener("DOMContentLoaded", function () {
-//   var calendarEl = document.getElementById("calendar");
-//   var calendar = new FullCalendar.Calendar(calendarEl, {
-//     initialView: "dayGridMonth",
-//   });
-//   calendar.render();
-// });
 // Open the calendar modal
 document
   .getElementById("openCalendarModal")
